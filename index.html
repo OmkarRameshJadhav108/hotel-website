@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>Amrut RESTURANT</title>
+        <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    </head>
+
+<body>
+    <div class="TOP">
+    <div class="LOGO">amrutresto</div>
+    <li class="brand"><img src="logo.png" ait="amrut resto"></li>
+    <div class="nav">
+    <a href="./home.html">HOME</a> 
+    <!--
+    <a href="./MENU.html">MENU</a>
+    <a href="./ABOUT.html">ABOUT</a>
+    <a href="./LOCATION.html">LOCATION</a>   
+    <a href="./CONTACT.html">CONTACT</a>-->
+    <button type="button" name="HOME" id="HOME" class="btn btn-primary" btn-lg btn-block></button>
+    </div>
+    <div class="search">
+        <i class="fa-solid fa-search"></i>
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</div>
+<div class="heading">
+    <div class="left">
+        <p>Are You Hungry ...?</p>
+        <h1>DON'T WAIT <h1>
+        <P> Come & Enjoy With Family </P>
+        <button>CHECK OUT HOME PAGE </button>    
+
+    </div>
+    <div class="right" id="food"></div>
+        <div class="soicalmedia">
+          <i class="fa-brands fa-facebook"></i>
+          <i calss="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>  
+        </div>
+    
+
+</div>
+<div class="bottom">
+<div class="menu">
+    <div id="food1"></div>
+    <div class="page"></div>
+    <div id="food2"></div>
+    <div id="food3"></div>
+    <div id="food4"></div>
+    <div id="food5"></div>
+    <div id="food6"></div>
+    <div id="food7"></div>
+    <div id="food8"></div>
+</div>
+</div>
+
+  
+  <script src="javascript.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on("click", function (event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $("html, body").animate(
+          {
+            scrollTop: $(hash).offset().top,
+          },
+          800,
+          function () {
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          }
+        );
+      } // End if
+    });
+  });
+</script>
+</html>
